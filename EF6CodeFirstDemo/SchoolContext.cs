@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace EF6CodeFirstDemo
+namespace TipsterFootballApp
 {
     public class SchoolContext : DbContext
     {

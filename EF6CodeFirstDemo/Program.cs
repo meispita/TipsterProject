@@ -1,17 +1,18 @@
-﻿using System;
+﻿using TipsterData;
+using System;
 
-namespace EF6CodeFirstDemo
+namespace TipsterFootballApp
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
-            using (var ctx = new SchoolContext())
+            using (var ctx = new TipsterDbContext())
             {
-                var student = new Student() { StudentName = "Bill" };
+                //var student = new Student() { StudentName = "Bill" };
 
-                ctx.Students.Add(student);
-                ctx.SaveChanges();
+                //ctx.Students.Add(student);
+                //ctx.SaveChanges();
             }
             Console.WriteLine("Demo completed.");
             Console.ReadLine();

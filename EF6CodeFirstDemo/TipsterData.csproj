@@ -49,20 +49,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Course.cs" />
-    <Compile Include="Grade.cs" />
+    <Compile Include="Migrations\201810191552435_Init.cs" />
+    <Compile Include="Migrations\201810191552435_Init.Designer.cs">
+      <DependentUpon>201810191552435_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Match.cs" />
+    <Compile Include="Model\Competition.cs" />
+    <Compile Include="Model\Score.cs" />
+    <Compile Include="Model\Stading.cs" />
+    <Compile Include="Model\Table.cs" />
+    <Compile Include="Model\Team.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SchoolContext.cs" />
-    <Compile Include="SchoolDBInitializer.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="StudentAddress.cs" />
-    <Compile Include="StudentConfigurations.cs" />
-    <Compile Include="Teacher.cs" />
+    <Compile Include="Model\Season.cs" />
+    <Compile Include="TipsterDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810191552435_Init.resx">
+      <DependentUpon>201810191552435_Init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

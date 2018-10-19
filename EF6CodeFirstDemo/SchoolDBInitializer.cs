@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 
-namespace EF6CodeFirstDemo
+namespace TipsterFootballApp
 {
     public class SchoolDBInitializer : DropCreateDatabaseAlways<SchoolContext>
     {
